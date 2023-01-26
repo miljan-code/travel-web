@@ -17,5 +17,9 @@ body {
   font-family: 'Poppins', sans-serif;
   font-weight: 400;
   font-size: 1.6rem;
+
+  color: #5e6282;
+  background-color: #fff;
   scroll-behavior: smooth;
+  overflow-x: hidden;
 }

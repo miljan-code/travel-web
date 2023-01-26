@@ -1,4 +1,4 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+This is a Travel Agency website created based on [ARShakir's](https://www.arshakir.com/project/travel-agency-landing-page-freebie) design.
 
 ## Getting Started
 
