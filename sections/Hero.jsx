@@ -2,7 +2,7 @@ import { styles } from '@styles/index';
 
 const Hero = () => {
   return (
-    <div className="relative">
+    <div className="relative mb-[10.5rem]">
       <div className={`${styles.sectionWidth} flex`}>
         <div className="flex-[0.9] flex flex-col justify-center">
           <p className="uppercase font-bold text-secondary text-[20px] leading-[30px] mb-[2.4rem]">

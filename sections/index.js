@@ -1,3 +1,5 @@
 import Hero from './Hero';
+import Services from './Services';
+import Destinations from './Destinations';
 
-export { Hero };
+export { Hero, Services, Destinations };

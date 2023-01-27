@@ -1,5 +1,5 @@
 import { Navbar, Decor } from '@components/index';
-import { Hero } from '@sections/index';
+import { Hero, Services, Destinations } from '@sections/index';
 
 export default function Home() {
   return (
@@ -7,6 +7,8 @@ export default function Home() {
       <Decor />
       <Navbar />
       <Hero />
+      <Services />
+      <Destinations />
     </div>
   );
 }
