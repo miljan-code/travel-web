@@ -6,7 +6,11 @@ const Destinations = () => {
   return (
     <div className="relative mb-[18.6rem]">
       <div className={`${styles.sectionWidth}`}>
-        <SectionTitle subtitle="Top Selling" title="Top Destinations" />
+        <SectionTitle
+          subtitle="Top Selling"
+          title="Top Destinations"
+          align="items-center"
+        />
         <div className="mt-[6rem] flex items-center justify-between">
           {destinations.map((destination, index) => (
             <Destination

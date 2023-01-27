@@ -42,17 +42,20 @@ export const destinations = [
   },
 ];
 
-export const bookTrip = [
+export const howToBook = [
   {
     title: 'Choose Destination',
     text: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Urna, tortor tempus. ',
+    color: 'yellow',
   },
   {
     title: 'Make Payment',
     text: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Urna, tortor tempus. ',
+    color: 'orange',
   },
   {
     title: 'Reach Airport on Selected Date',
     text: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Urna, tortor tempus. ',
+    color: 'blue',
   },
 ];

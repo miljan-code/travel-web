@@ -9,7 +9,11 @@ const Services = () => {
         <img src="/pluses-decor.svg" className="h-full w-full" />
       </div>
       <div className={`${styles.sectionWidth}`}>
-        <SectionTitle subtitle="CATEGORY" title="We Offer Best Services" />
+        <SectionTitle
+          subtitle="CATEGORY"
+          title="We Offer Best Services"
+          align="items-center"
+        />
         <div className="mt-[6.8rem] flex items-center justify-between gap-[1.5rem]">
           {services.map((service, index) => (
             <Card
