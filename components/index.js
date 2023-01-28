@@ -5,5 +5,15 @@ import Card from './Card';
 import Destination from './Destination';
 import HowTo from './HowTo';
 import Icon from './Icon';
+import FeaturedItem from './FeaturedItem';
 
-export { Navbar, Decor, SectionTitle, Card, Destination, HowTo, Icon };
+export {
+  Navbar,
+  Decor,
+  SectionTitle,
+  Card,
+  Destination,
+  HowTo,
+  Icon,
+  FeaturedItem,
+};

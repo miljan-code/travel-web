@@ -1,5 +1,14 @@
 import { Navbar, Decor } from '@components/index';
-import { Hero, Services, Destinations, BookTrip } from '@sections/index';
+import {
+  Hero,
+  Services,
+  Destinations,
+  BookTrip,
+  Testimonials,
+  Featured,
+  Newsletter,
+  Footer,
+} from '@sections/index';
 
 export default function Home() {
   return (
@@ -10,6 +19,10 @@ export default function Home() {
       <Services />
       <Destinations />
       <BookTrip />
+      <Testimonials />
+      <Featured />
+      <Newsletter />
+      <Footer />
     </div>
   );
 }

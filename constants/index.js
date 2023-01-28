@@ -59,3 +59,11 @@ export const howToBook = [
     color: 'blue',
   },
 ];
+
+export const featured = [
+  '/axon.svg',
+  '/jetstar.svg',
+  '/expedia.svg',
+  '/qantas.svg',
+  '/alitalia.svg',
+];
