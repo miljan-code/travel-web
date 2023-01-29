@@ -4,7 +4,7 @@ import { services } from '@constants/index';
 
 const Services = () => {
   return (
-    <div className="relative mb-[12rem]">
+    <div className="relative mb-[18.6rem]">
       <div className="absolute top-0 right-[10%]">
         <img src="/pluses-decor.svg" className="h-full w-full" />
       </div>
@@ -14,7 +14,7 @@ const Services = () => {
           title="We Offer Best Services"
           align="items-center"
         />
-        <div className="mt-[6.8rem] flex items-center justify-between gap-[1.5rem]">
+        <div className="mt-[6.8rem] grid grid-cols-2 xl:flex items-center justify-between gap-[1.5rem]">
           {services.map((service, index) => (
             <Card
               key={service.title}

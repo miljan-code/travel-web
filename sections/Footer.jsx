@@ -4,7 +4,7 @@ const Footer = () => {
   return (
     <div className="relative">
       <div
-        className={`${styles.sectionWidth} grid grid-cols-footer gap-[8rem] mb-[8rem]`}
+        className={`${styles.sectionWidth} flex flex-col lg:grid grid-cols-footer gap-[8rem] mb-[8rem]`}
       >
         <div className="-mt-[1rem]">
           <h2 className="text-[4.4rem] font-[500] text-primary leading-[66px] mb-[1.9rem]">
@@ -19,9 +19,15 @@ const Footer = () => {
             Company
           </h3>
           <ul className="flex flex-col gap-[1.2rem]">
-            <li className="font-[500] text-[1.8rem]">About</li>
-            <li className="font-[500] text-[1.8rem]">Careers</li>
-            <li className="font-[500] text-[1.8rem]">Mobile</li>
+            <li className="font-[500] text-[1.8rem]">
+              <a href="#">About</a>
+            </li>
+            <li className="font-[500] text-[1.8rem]">
+              <a href="#">Careers</a>
+            </li>
+            <li className="font-[500] text-[1.8rem]">
+              <a href="#">Mobile</a>
+            </li>
           </ul>
         </div>
         <div className="">
@@ -29,9 +35,15 @@ const Footer = () => {
             Contact
           </h3>
           <ul className="flex flex-col gap-[1.2rem]">
-            <li className="font-[500] text-[1.8rem]">Help/FAQ</li>
-            <li className="font-[500] text-[1.8rem]">Press</li>
-            <li className="font-[500] text-[1.8rem]">Affiliates</li>
+            <li className="font-[500] text-[1.8rem]">
+              <a href="#">Help/FAQ</a>
+            </li>
+            <li className="font-[500] text-[1.8rem]">
+              <a href="#">Press</a>
+            </li>
+            <li className="font-[500] text-[1.8rem]">
+              <a href="#">Affiliates</a>
+            </li>
           </ul>
         </div>
         <div className="">
@@ -39,9 +51,15 @@ const Footer = () => {
             More
           </h3>
           <ul className="flex flex-col gap-[1.2rem]">
-            <li className="font-[500] text-[1.8rem]">Airline fees</li>
-            <li className="font-[500] text-[1.8rem]">Airline</li>
-            <li className="font-[500] text-[1.8rem]">Low fare tips</li>
+            <li className="font-[500] text-[1.8rem]">
+              <a href="#">Airline fees</a>
+            </li>
+            <li className="font-[500] text-[1.8rem]">
+              <a href="#">Airline</a>
+            </li>
+            <li className="font-[500] text-[1.8rem]">
+              <a href="#">Low fare tips</a>
+            </li>
           </ul>
         </div>
         <div className="">

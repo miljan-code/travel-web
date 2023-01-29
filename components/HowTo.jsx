@@ -5,7 +5,7 @@ const HowTo = ({ color, title, text, index }) => {
 
   return (
     <div
-      className={`flex gap-[2.1rem] mb-[4.8rem] ${
+      className={`flex justify-center lg:justify-start gap-[2.1rem] mb-[4.8rem] ${
         index === 1 && 'mt-[3.1rem]'
       }`}
     >

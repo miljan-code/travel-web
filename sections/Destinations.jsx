@@ -11,7 +11,7 @@ const Destinations = () => {
           title="Top Destinations"
           align="items-center"
         />
-        <div className="mt-[6rem] flex items-center justify-between">
+        <div className="mt-[6rem] flex flex-col lg:flex-row lg:items-center lg:justify-between gap-[6rem] lg:gap-[1rem]">
           {destinations.map((destination, index) => (
             <Destination
               key={destination.destination}

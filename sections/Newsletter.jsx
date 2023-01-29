@@ -24,7 +24,7 @@ const Newsletter = () => {
                 placeholder="Your Email"
               />
             </div>
-            <button className="bg-gradient rounded-[10px] text-[1.7rem] font-opensans font-semibold px-[5rem] py-[2.2rem] text-white">
+            <button className="bg-gradient hover:bg-gradientOrange transition-all rounded-[10px] text-[1.7rem] font-opensans font-semibold px-[5rem] py-[2.2rem] text-white">
               Subscribe
             </button>
           </form>

@@ -6,8 +6,10 @@ import { howToBook } from '@constants/index';
 const BookTrip = () => {
   return (
     <div className="relative mb-[20rem]">
-      <div className={`${styles.sectionWidth} flex gap-[5rem]`}>
-        <div className="flex-1">
+      <div
+        className={`${styles.sectionWidth} flex flex-col lg:flex-row gap-[5rem]`}
+      >
+        <div className="flex-1 text-center lg:text-left">
           <SectionTitle
             subtitle="Easy and Fast"
             title="Book Your Next Trip In 3 Easy Steps"

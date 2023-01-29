@@ -41,6 +41,7 @@ module.exports = {
       },
       backgroundImage: {
         gradient: 'linear-gradient(180deg, #FF946D 0%, #FF7D68 100%)',
+        gradientOrange: 'linear-gradient(180deg, #e68562 0%, #e68562 100%)',
         gradientBlue:
           'linear-gradient(201.65deg, #747DEF 10.27%, #5E3BE1 100%)',
         gradientSocial:
@@ -48,6 +49,11 @@ module.exports = {
       },
       gridTemplateColumns: {
         footer: '2fr 1fr 1fr 1fr 2fr',
+      },
+      screens: {
+        lg: '1024px',
+        xl: '1300px',
+        xxl: '1440px',
       },
     },
   },

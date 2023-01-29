@@ -6,6 +6,7 @@ import Destination from './Destination';
 import HowTo from './HowTo';
 import Icon from './Icon';
 import FeaturedItem from './FeaturedItem';
+import MobileMenu from './MobileMenu';
 
 export {
   Navbar,
@@ -16,4 +17,5 @@ export {
   HowTo,
   Icon,
   FeaturedItem,
+  MobileMenu,
 };
