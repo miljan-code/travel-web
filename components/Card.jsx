@@ -1,8 +1,14 @@
+import { motion } from 'framer-motion';
+import { fadeIn } from '@utils/motion';
+
 const Card = ({ img, title, text, index }) => {
   return (
-    <div className="relative">
+    <motion.div
+      variants={fadeIn('right', 'spring', index * 0.5, 1.75)}
+      className="relative"
+    >
       <div
-        className={`rounded-[36px] p-[4rem] flex flex-col items-center justify-center text-center relative bg-white z-10 xl:max-w-full ${
+        className={`rounded-[36px] p-[2rem] md:p-[4rem] flex flex-col items-center justify-center text-center relative bg-white z-10 xl:max-w-full ${
           index === 2 && 'xl:shadow-card'
         }`}
       >
@@ -17,7 +23,7 @@ const Card = ({ img, title, text, index }) => {
       {index === 2 && (
         <div className="absolute -z-10 -bottom-[3.4rem] -left-[3.3rem] bg-secondary w-[10rem] h-[10rem] rounded-tl-[30px] rounded-br-[10px]"></div>
       )}
-    </div>
+    </motion.div>
   );
 };
 

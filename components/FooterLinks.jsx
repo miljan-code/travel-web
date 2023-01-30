@@ -6,7 +6,7 @@ const FooterLinks = ({ title, items }) => {
       </h3>
       <ul className="flex flex-col gap-1 md:gap-[1.2rem]">
         {items.map(item => (
-          <li className="font-[500] text-[1.6rem] md:text-[1.8rem]">
+          <li key={item} className="font-[500] text-[1.6rem] md:text-[1.8rem]">
             <a href="#">{item}</a>
           </li>
         ))}

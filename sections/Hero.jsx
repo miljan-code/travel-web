@@ -1,7 +1,9 @@
 'use client';
 
 import { useState } from 'react';
+import { motion } from 'framer-motion';
 import { styles } from '@styles/index';
+import { slideIn, showUpVariant } from '@utils/motion';
 
 const Hero = () => {
   const [btnHover, setBtnHover] = useState(false);
@@ -9,7 +11,13 @@ const Hero = () => {
   return (
     <div className="-mt-5 md:-mt-0 relative mb-[10.5rem]">
       <div className={`${styles.sectionWidth} lg:flex`}>
-        <div className="flex-[0.9] flex flex-col justify-center">
+        <motion.div
+          variants={showUpVariant(0)}
+          initial="hidden"
+          whileInView="show"
+          viewport={{ once: true }}
+          className="flex-[0.9] flex flex-col justify-center"
+        >
           <p className="uppercase font-bold text-secondary text-[1.6rem] md:text-[1.8rem] xl:text-[2rem] leading-[30px] mb-[2.4rem]">
             Best Destinations around the World
           </p>
@@ -20,7 +28,7 @@ const Hero = () => {
               <img
                 src="/underline.png"
                 alt="underline"
-                className="absolute bottom-[2rem] left-[50%] translate-x-[-35%] w-full scale-[1.5]"
+                className="absolute bottom-[1rem] md:bottom-[1.5rem] lg:bottom-[2rem] left-[50%] translate-x-[-35%] w-full scale-[1.5]"
               />
             </span>{' '}
             and live a new and full life
@@ -30,8 +38,8 @@ const Hero = () => {
             Preferred to sportsmen it engrossed listening. Park gate sell they
             west hard for the.
           </p>
-          <div className="flex items-center justify-center lg:justify-start">
-            <button className="text-opensans text-[1.4rem] md:text-[1.8rem] font-[500] leading-[23px] px-[2rem] py-[1.4rem] md:px-[2.7rem] md:py-[1.9rem] rounded-[10px] bg-[#F1A501] hover:bg-[#d99501] shadow-btn text-white mr-[4.4rem] transition-all">
+          <div className="flex items-center sm:justify-center lg:justify-start gap-[3rem] sm:gap-0">
+            <button className="text-opensans text-[1.4rem] md:text-[1.8rem] font-[500] leading-[23px] px-[2rem] py-[1.4rem] md:px-[2.7rem] md:py-[1.9rem] rounded-[10px] bg-[#F1A501] hover:bg-[#d99501] shadow-btn text-white sm:mr-[4.4rem] transition-all">
               Find out more
             </button>
             <div
@@ -55,14 +63,20 @@ const Hero = () => {
               </p>
             </div>
           </div>
-        </div>
-        <div className="hidden lg:block flex-[1.1]">
+        </motion.div>
+        <motion.div
+          variants={slideIn('right', 'tween', 0, 0.75)}
+          initial="hidden"
+          whileInView="show"
+          viewport={{ once: true }}
+          className="hidden lg:block flex-[1.1]"
+        >
           <img
             src="/traveller-1-v2.png"
             alt="Traveller"
             className="w-full h-full object-contain mr-[2.1rem]"
           />
-        </div>
+        </motion.div>
       </div>
     </div>
   );

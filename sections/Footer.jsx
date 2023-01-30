@@ -1,9 +1,17 @@
+import { motion } from 'framer-motion';
+import { showUpVariant } from '@utils/motion';
 import { styles } from '@styles/index';
 import { FooterLinks } from '@components/index';
 
 const Footer = () => {
   return (
-    <div className="relative">
+    <motion.div
+      variants={showUpVariant(0)}
+      initial="hidden"
+      whileInView="show"
+      viewport={{ once: true }}
+      className="relative"
+    >
       <div
         className={`${styles.sectionWidth} flex flex-col md:grid lg:grid-cols-footer grid-cols-3 gap-[3rem] md:gap-[8rem] mb-[8rem]`}
       >
@@ -56,7 +64,7 @@ const Footer = () => {
           Designed by ARShakir. Developed by Miljan.
         </p>
       </div>
-    </div>
+    </motion.div>
   );
 };
 

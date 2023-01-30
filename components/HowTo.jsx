@@ -1,4 +1,4 @@
-import { getHowToProperties } from '@utils/index';
+import { getHowToProperties } from '@utils/helpers';
 
 const HowTo = ({ color, title, text, index }) => {
   const { img } = getHowToProperties(color);
