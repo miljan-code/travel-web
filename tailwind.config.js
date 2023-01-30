@@ -51,6 +51,9 @@ module.exports = {
         footer: '2fr 1fr 1fr 1fr 2fr',
       },
       screens: {
+        xs: '375',
+        sm: '425px',
+        md: '768px',
         lg: '1024px',
         xl: '1300px',
         xxl: '1440px',

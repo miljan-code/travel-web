@@ -7,6 +7,7 @@ import HowTo from './HowTo';
 import Icon from './Icon';
 import FeaturedItem from './FeaturedItem';
 import MobileMenu from './MobileMenu';
+import FooterLinks from './FooterLinks';
 
 export {
   Navbar,
@@ -18,4 +19,5 @@ export {
   Icon,
   FeaturedItem,
   MobileMenu,
+  FooterLinks,
 };

@@ -9,7 +9,7 @@ const Navbar = () => {
   const [showMenu, setShowMenu] = useState(false);
 
   return (
-    <div className="relative pt-[4.8rem] mb-[5.8rem]">
+    <div className="relative pt-[3rem] md:pt-[4.8rem] mb-[5.8rem]">
       <div
         className={`${styles.sectionWidth} flex justify-between items-center`}
       >

@@ -5,14 +5,14 @@ const HowTo = ({ color, title, text, index }) => {
 
   return (
     <div
-      className={`flex justify-center lg:justify-start gap-[2.1rem] mb-[4.8rem] ${
+      className={`flex justify-center lg:justify-start gap-[2.1rem] mb-[2.4rem] md:mb-[4.8rem] ${
         index === 1 && 'mt-[3.1rem]'
       }`}
     >
       <div
-        className={`${color === 'yellow' ? 'bg-[#f0bb1f]' : ''} ${
-          color === 'orange' ? 'bg-[#f15a2b]' : ''
-        } ${
+        className={`hidden md:block ${
+          color === 'yellow' ? 'bg-[#f0bb1f]' : ''
+        } ${color === 'orange' ? 'bg-[#f15a2b]' : ''} ${
           color === 'blue' ? 'bg-[#006380]' : ''
         } rounded-[13px] w-[4.8rem] h-[4.8rem] flex items-center justify-center`}
       >
@@ -20,7 +20,7 @@ const HowTo = ({ color, title, text, index }) => {
       </div>
       <div className="-mt-[3px]">
         <h3 className="font-bold text-primaryLight">{title}</h3>
-        <p className="leading-[20px] font-normal w-[33rem]">{text}</p>
+        <p className="leading-[20px] font-normal md:w-[33rem]">{text}</p>
       </div>
     </div>
   );

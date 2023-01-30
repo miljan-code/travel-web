@@ -5,15 +5,17 @@ import { howToBook } from '@constants/index';
 
 const BookTrip = () => {
   return (
-    <div className="relative mb-[20rem]">
+    <div className="relative mb-[15rem] md:mb-[20rem]">
       <div
-        className={`${styles.sectionWidth} flex flex-col lg:flex-row gap-[5rem]`}
+        className={`${styles.sectionWidth} flex flex-col lg:flex-row md:gap-[5rem]`}
       >
-        <div className="flex-1 text-center lg:text-left">
-          <SectionTitle
-            subtitle="Easy and Fast"
-            title="Book Your Next Trip In 3 Easy Steps"
-          />
+        <div className="flex-1">
+          <div className="mb-[6rem] lg:mb-0 text-center lg:text-left">
+            <SectionTitle
+              subtitle="Easy and Fast"
+              title="Book Your Next Trip In 3 Easy Steps"
+            />
+          </div>
           {howToBook.map((how, index) => (
             <HowTo
               key={how.title}
@@ -25,8 +27,8 @@ const BookTrip = () => {
           ))}
         </div>
         <div className="flex-1 flex items-center justify-center">
-          <div className="relative px-[2.5rem] py-[2rem] flex flex-col rounded-[26px] shadow-card bg-white">
-            <div className="absolute top-[-6.6rem] right-[-4.3rem] bg-[#59B1E6] opacity-[0.4] w-[35.4rem] h-[36.7rem] rounded-full blur-[75px] z-[-10]" />
+          <div className="relative px-[2.5rem] py-[2rem] mt-[3rem] md:mt-0 flex flex-col rounded-[26px] shadow-card bg-white">
+            <div className="absolute top-[-6.6rem] right-[-4.3rem] bg-[#59B1E6] opacity-[0.4] w-full h-full md:w-[35.4rem] md:h-[36.7rem] rounded-full blur-[75px] z-[-10]" />
             <img
               src="/greece.jpg"
               alt="greece"
@@ -56,7 +58,7 @@ const BookTrip = () => {
                 className="w-[2rem] h-[1.8rem] ml-auto cursor-pointer"
               />
             </div>
-            <div className="absolute bottom-[6rem] right-[-11.4rem] px-[2rem] py-[1.8rem] rounded-[18px] shadow-card flex items-start gap-[1rem] z-20 bg-white pr-[3.4rem]">
+            <div className="hidden md:flex absolute bottom-[6rem] right-[-11.4rem] px-[2rem] py-[1.8rem] rounded-[18px] shadow-card items-start gap-[1rem] z-20 bg-white pr-[3.4rem]">
               <img src="/rome-2.svg" alt="Rome" className="w-[5rem] h-[5rem]" />
               <div className="flex flex-col -mt-[3px]">
                 <p className="text-[1.4rem] tracking-[-3.5%] mb-[6px] font-[500]">

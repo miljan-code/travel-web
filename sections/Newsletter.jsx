@@ -2,29 +2,29 @@ import { styles } from '@styles/index';
 
 const Newsletter = () => {
   return (
-    <div className="relative mb-[16.6rem]">
+    <div className="relative mb-[12rem] md:mb-[16.6rem]">
       <div className={`${styles.sectionWidth} px-[10rem]`}>
-        <div className="relative bg-newsletter rounded-newsletter px-[13.5rem]">
-          <h2 className="pt-[7.9rem] mb-[7.4rem] text-center font-semibold text-[3.3rem] leading-[54px] text-[#5E6282]">
+        <div className="relative bg-newsletter rounded-newsletter lg:px-[13.5rem] md:px-[9rem] px-[4rem]">
+          <h2 className="lg:pt-[7.9rem] pt-[5rem] mb-[4rem] lg:mb-[7.4rem] text-center font-semibold text-[1.6rem] md:text-[2rem] lg:text-[3.3rem] leading-[34px] lg:leading-[54px] text-[#5E6282]">
             Subscribe to get information, latest news and other interesting
             offers about Cobham
           </h2>
-          <form className="relative pb-[7.8rem] flex items-center justify-center gap-[2.4rem] z-10">
+          <form className="relative lg:pb-[7.8rem] pb-[5rem] flex flex-col md:flex-row items-center justify-center gap-[2.4rem] z-10">
             <div className="relative">
               <img
                 src="/mail.svg"
                 alt="mail"
-                className="absolute top-[50%] left-[3.1rem] translate-y-[-50%] w-[21px] h-[18px]"
+                className="absolute top-[50%] left-[1rem] md:left-[3.1rem] translate-y-[-50%] w-[21px] h-[18px]"
               />
               <input
                 type="email"
                 name="email"
                 id="email"
-                className="text-[1.4rem] py-[2.6rem] px-[6.6rem] placeholder:text-[#39425D] text-[#39425D] rounded-[10px] w-[42rem]"
+                className="text-[1.4rem] py-[1.4rem] px-[4rem] md:py-[2.6rem] md:px-[6.6rem] placeholder:text-[#39425D] text-[#39425D] rounded-[10px] lg:w-[42rem]"
                 placeholder="Your Email"
               />
             </div>
-            <button className="bg-gradient hover:bg-gradientOrange transition-all rounded-[10px] text-[1.7rem] font-opensans font-semibold px-[5rem] py-[2.2rem] text-white">
+            <button className="bg-gradient hover:bg-gradientOrange transition-all rounded-[10px] text-[1.7rem] font-opensans font-semibold px-[2rem] py-[1rem] md:px-[5rem] md:py-[2.2rem] text-white">
               Subscribe
             </button>
           </form>
@@ -36,19 +36,19 @@ const Newsletter = () => {
           <img
             src="/news-decor-2.svg"
             alt="decoration"
-            className="absolute top-0 right-0 opacity-10"
+            className="hidden md:block absolute top-0 right-0 opacity-10"
           />
-          <div className="rounded-full bg-gradientBlue w-[7rem] h-[7rem] absolute top-[-13px] right-[-20px] flex items-center justify-center">
+          <div className="rounded-full bg-gradientBlue w-[3.6rem] h-[3.6rem] md:w-[7rem] md:h-[7rem] absolute top-[-1rem] right-[-1rem] md:top-[-13px] md:right-[-20px] flex items-center justify-center">
             <img
               src="/paper-plane.svg"
               alt="paper plane"
-              className="ml-2 mb-1 w-[37px] h-[34px]"
+              className="ml-1 md:ml-2 md:mb-1 w-[1.8rem] h-[1.6rem] md:w-[3.7rem] md:h-[3.4rem]"
             />
           </div>
           <img
             src="/news-decor-3.svg"
             alt="Decor"
-            className="absolute bottom-[-6rem] right-[-10rem]"
+            className="hidden lg:block absolute bottom-[-6rem] right-[-10rem]"
           />
         </div>
       </div>

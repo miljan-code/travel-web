@@ -19,7 +19,7 @@ const Destination = ({ img, destination, price, days, index }) => {
         </div>
       </div>
       {index === 3 && (
-        <div className="absolute -right-[6rem] bottom-[6rem]">
+        <div className="hidden md:block absolute -right-[6rem] bottom-[6rem]">
           <img src="/decore-destination.svg" className="w-full h-full" />
         </div>
       )}

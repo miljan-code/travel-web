@@ -7,10 +7,10 @@ const Card = ({ img, title, text, index }) => {
         }`}
       >
         <img src={img} className="mb-[2.9rem]" />
-        <h3 className="font-opensans font-semibold text-[2rem] leading-[27px] text-[#1E1D4C] mb-[1.5rem]">
+        <h3 className="font-opensans font-semibold text-[1.8rem] md:text-[2rem] leading-[27px] text-[#1E1D4C] mb-[1.5rem]">
           {title}
         </h3>
-        <p className="text-primaryLight font-[500] text-[1.6rem] leading-[26px] max-w-[18.1rem]">
+        <p className="text-primaryLight font-[500] text-[1.4rem] md:text-[1.6rem] leading-[26px] max-w-[18.1rem]">
           {text}
         </p>
       </div>

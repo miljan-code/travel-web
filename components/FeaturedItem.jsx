@@ -14,7 +14,7 @@ const FeaturedItem = ({ img, index }) => {
       <img
         src={img}
         className={`${
-          hoverImg ? 'mix-blend-normal' : 'mix-blend-luminosity'
+          hoverImg ? 'md:mix-blend-normal' : 'md:mix-blend-luminosity'
         } transition-all object-center`}
       />
       <div
