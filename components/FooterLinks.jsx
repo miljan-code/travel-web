@@ -1,6 +1,6 @@
 const FooterLinks = ({ title, items }) => {
   return (
-    <div className="text-center md:text-left">
+    <div className="text-center">
       <h3 className="font-bold text-[1.6rem] md:text-[2.1rem] text-[#080809] mb-[1rem] md:mb-[3.4rem]">
         {title}
       </h3>

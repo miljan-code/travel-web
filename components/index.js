@@ -7,7 +7,10 @@ import HowTo from './HowTo';
 import Icon from './Icon';
 import FeaturedItem from './FeaturedItem';
 import MobileMenu from './MobileMenu';
+import MobileMenuItem from './MobileMenuItem';
 import FooterLinks from './FooterLinks';
+import TripCard from './TripCard';
+import Socials from './Socials';
 
 export {
   Navbar,
@@ -19,5 +22,8 @@ export {
   Icon,
   FeaturedItem,
   MobileMenu,
+  MobileMenuItem,
   FooterLinks,
+  TripCard,
+  Socials,
 };

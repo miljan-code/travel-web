@@ -1,7 +1,13 @@
-import { getHowToProperties } from '@utils/helpers';
+import { getHowToIcon } from '@utils/helpers';
 
 const HowTo = ({ color, title, text, index }) => {
-  const { img } = getHowToProperties(color);
+  const { img } = getHowToIcon(color);
+
+  const colorVariants = {
+    yellow: 'bg-[#f0bb1f]',
+    orange: 'bg-[#f15a2b]',
+    blue: 'bg-[#006380]',
+  };
 
   return (
     <div
@@ -10,11 +16,7 @@ const HowTo = ({ color, title, text, index }) => {
       }`}
     >
       <div
-        className={`hidden md:block ${
-          color === 'yellow' ? 'bg-[#f0bb1f]' : ''
-        } ${color === 'orange' ? 'bg-[#f15a2b]' : ''} ${
-          color === 'blue' ? 'bg-[#006380]' : ''
-        } rounded-[13px] w-[4.8rem] h-[4.8rem] flex items-center justify-center`}
+        className={`hidden md:flex ${colorVariants[color]} rounded-[13px] w-[4.8rem] h-[4.8rem] items-center justify-center`}
       >
         <img src={img} className="w-[22px] h-[22px]" />
       </div>
