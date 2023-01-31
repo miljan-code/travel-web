@@ -1,23 +1,15 @@
 'use client';
 
 import { useState } from 'react';
-import { motion } from 'framer-motion';
 import { styles } from '@styles/index';
 import { BiChevronDown } from 'react-icons/bi';
 import { MobileMenu } from '.';
-import { navVariants } from '@utils/motion';
 
 const Navbar = () => {
   const [showMenu, setShowMenu] = useState(false);
 
   return (
-    <motion.div
-      variants={navVariants}
-      initial="hidden"
-      whileInView="show"
-      viewport={{ once: true }}
-      className="relative pt-[3rem] md:pt-[4.8rem] mb-[5.8rem]"
-    >
+    <div className="relative pt-[3rem] md:pt-[4.8rem] mb-[5.8rem]">
       <div
         className={`${styles.sectionWidth} flex justify-between items-center`}
       >
@@ -63,7 +55,7 @@ const Navbar = () => {
         </div>
         {showMenu && <MobileMenu setShowMenu={setShowMenu} />}
       </div>
-    </motion.div>
+    </div>
   );
 };
 

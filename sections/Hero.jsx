@@ -1,9 +1,7 @@
 'use client';
 
 import { useState } from 'react';
-import { motion } from 'framer-motion';
 import { styles } from '@styles/index';
-import { slideIn, showUpVariant } from '@utils/motion';
 
 const Hero = () => {
   const [btnHover, setBtnHover] = useState(false);
@@ -11,13 +9,7 @@ const Hero = () => {
   return (
     <div className="-mt-5 md:-mt-0 relative mb-[10.5rem]">
       <div className={`${styles.sectionWidth} lg:flex`}>
-        <motion.div
-          variants={showUpVariant(0)}
-          initial="hidden"
-          whileInView="show"
-          viewport={{ once: true }}
-          className="flex-[0.9] flex flex-col justify-center"
-        >
+        <div className="flex-[0.9] flex flex-col justify-center">
           <p className="uppercase font-bold text-secondary text-[1.6rem] md:text-[1.8rem] xl:text-[2rem] leading-[30px] mb-[2.4rem]">
             Best Destinations around the World
           </p>
@@ -63,20 +55,14 @@ const Hero = () => {
               </p>
             </div>
           </div>
-        </motion.div>
-        <motion.div
-          variants={slideIn('right', 'tween', 0, 0.75)}
-          initial="hidden"
-          whileInView="show"
-          viewport={{ once: true }}
-          className="hidden lg:block flex-[1.1]"
-        >
+        </div>
+        <div className="hidden lg:block flex-[1.1]">
           <img
             src="/traveller-1-v2.png"
             alt="Traveller"
             className="w-full h-full object-contain mr-[2.1rem]"
           />
-        </motion.div>
+        </div>
       </div>
     </div>
   );

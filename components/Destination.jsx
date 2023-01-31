@@ -1,15 +1,6 @@
-import { motion } from 'framer-motion';
-import { fadeIn } from '@utils/motion';
-
 const Destination = ({ img, destination, price, days, index }) => {
   return (
-    <motion.div
-      variants={fadeIn('right', 'spring', index * 0.5, 1.75)}
-      initial="hidden"
-      whileInView="show"
-      viewport={{ once: true }}
-      className="relative"
-    >
+    <div className="relative">
       <div className="xxl:w-[34.5rem] w-full drop-shadow-destination rounded-[24px] overflow-hidden relative z-10">
         <img
           src={img}
@@ -32,7 +23,7 @@ const Destination = ({ img, destination, price, days, index }) => {
           <img src="/decore-destination.svg" className="w-full h-full" />
         </div>
       )}
-    </motion.div>
+    </div>
   );
 };
 

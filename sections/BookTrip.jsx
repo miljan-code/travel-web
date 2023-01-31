@@ -1,5 +1,3 @@
-import { motion } from 'framer-motion';
-import { bookTripVariants, showUpVariant } from '@utils/motion';
 import { Icon, SectionTitle } from '@components/index';
 import { styles } from '@styles/index';
 import { HowTo } from '@components/index';
@@ -11,13 +9,7 @@ const BookTrip = () => {
       <div
         className={`${styles.sectionWidth} flex flex-col lg:flex-row md:gap-[5rem]`}
       >
-        <motion.div
-          variants={showUpVariant(0)}
-          initial="hidden"
-          whileInView="show"
-          viewport={{ once: true }}
-          className="flex-1"
-        >
+        <div className="flex-1">
           <div className="mb-[6rem] lg:mb-0 text-center lg:text-left">
             <SectionTitle
               subtitle="Easy and Fast"
@@ -33,14 +25,8 @@ const BookTrip = () => {
               index={index + 1}
             />
           ))}
-        </motion.div>
-        <motion.div
-          variants={bookTripVariants('right', 0.5)}
-          initial="hidden"
-          whileInView="show"
-          viewport={{ once: true }}
-          className="flex-1 flex items-center justify-center"
-        >
+        </div>
+        <div className="flex-1 flex items-center justify-center">
           <div className="relative px-[2.5rem] py-[2rem] mt-[3rem] md:mt-0 flex flex-col rounded-[26px] shadow-card bg-white">
             <div className="absolute top-[-6.6rem] right-0 md:right-[-4.3rem] bg-[#59B1E6] opacity-[0.4] w-full h-full md:w-[35.4rem] md:h-[36.7rem] rounded-full blur-[75px] z-[-10]" />
             <img
@@ -90,7 +76,7 @@ const BookTrip = () => {
               </div>
             </div>
           </div>
-        </motion.div>
+        </div>
       </div>
     </div>
   );

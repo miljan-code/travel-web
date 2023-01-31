@@ -1,5 +1,3 @@
-import { motion } from 'framer-motion';
-import { slideIn } from '@utils/motion';
 import { styles } from '@styles/index';
 import { SectionTitle } from '@components/index';
 
@@ -16,25 +14,13 @@ const Testimonials = () => {
               title="What People Say About Us"
             />
           </div>
-          <motion.div
-            variants={slideIn('left', 'tween', 0, 0.75)}
-            initial="hidden"
-            whileInView="show"
-            viewport={{ once: true }}
-            className="hidden xl:flex items-center justify-between w-[8.7rem] h-[1.2rem]"
-          >
+          <div className="hidden xl:flex items-center justify-between w-[8.7rem] h-[1.2rem]">
             <div className="h-[1.2rem] w-[1.2rem] bg-[#39425D] rounded-full cursor-pointer" />
             <div className="h-[1.2rem] w-[1.2rem] bg-[#E5E5E5] rounded-full cursor-pointer" />
             <div className="h-[1.2rem] w-[1.2rem] bg-[#E5E5E5] rounded-full cursor-pointer" />
-          </motion.div>
+          </div>
         </div>
-        <motion.div
-          variants={slideIn('right', 'tween', 0, 0.75)}
-          initial="hidden"
-          whileInView="show"
-          viewport={{ once: true }}
-          className="relative flex-1 mt-[3rem] md:pr-[11.4rem] self-center xl:self-start"
-        >
+        <div className="relative flex-1 mt-[3rem] md:pr-[11.4rem] self-center xl:self-start">
           <div className="hidden md:block absolute top-[50%] translate-y-[-35%] right-[-4rem]">
             <img
               src="/chevron-up.svg"
@@ -79,7 +65,7 @@ const Testimonials = () => {
               <div className="h-[1.2rem] w-[1.2rem] bg-[#E5E5E5] rounded-full cursor-pointer" />
             </div>
           </div>
-        </motion.div>
+        </div>
       </div>
     </div>
   );
